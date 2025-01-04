@@ -31,5 +31,5 @@ Excited to share my journey as a Python Programming Intern at CodSoft! Here's a 
     Built easy-to-use tools focusing on functionality.
 
 
-Feel free to explore my projects and connect on LinkedIn! 
+Feel free to explore my projects and connect on [LinkedIn](https://www.linkedin.com/in/dipto26)! 
 
