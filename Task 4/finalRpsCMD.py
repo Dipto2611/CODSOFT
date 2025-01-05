@@ -1,6 +1,6 @@
 """TASK 4"""
 
-#Rock-Paper-Scissors Game
+#Rock-Paper-Scissors Game using Cmd line:
 
 import random
 

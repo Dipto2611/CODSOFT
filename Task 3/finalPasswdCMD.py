@@ -1,11 +1,9 @@
 """TASK 3"""
 
-#Password Generator
+#Password Generator using Cmd line:
 
 import random
 import string
-
-
 
 lower_ = string.ascii_lowercase   # i.e abcde
 upper_ = string.ascii_uppercase   # i.e ABCDE
@@ -39,8 +37,8 @@ def desired_passwd():
 def main():
     while (1):
         n = int(input("Enter the length of the reqd pass:")) #reqd len of passwd
-        res = random.choices(desired_passwd(), k=n)  #here random func will selects the out of it random chars
-        print(''.join(res))
+        res = random.choices(desired_passwd(), k=n)  #here random func will select out the random chars for the passwd!!
+        print(''.join(res))  #to avoid spacing {''.join is used}
 
         #for continuation of new-new passwd!!
         progress=int(input("Do you want a new passwd: (YES=1 / NO=0)"))
