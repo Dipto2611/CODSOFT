@@ -7,7 +7,14 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 from PyQt5.uic import loadUi
 
 class Contact_book(QMainWindow):
-    contact = {}  # declare an empty dict first
+   
+    #here i've predifined few contacts 
+   
+    contact = {
+        "Amit ": {"Phone": "9876543210", "Email": "amit@gmail.com", "Address": "New Delhi"},
+        "Dhriti": {"Phone": "9123456789", "Email": "dhri@gmail.com", "Address": "Mumbai"},
+        "Rahul ": {"Phone": "9876501234", "Email": "rahul78@gmail.com", "Address": "Bangalore"}
+    }  
     
     def __init__(self):
         super(Contact_book, self).__init__()
@@ -24,7 +31,10 @@ class Contact_book(QMainWindow):
         self.search.textChanged.connect(self.search_contact)
         self.display.itemClicked.connect(self.display_contact)
 
-    
+        
+        #NOTE:the .keys() func will fetch the keys and update the dict and when the app will open it will show in default nature
+        self.display.addItems(self.contact.keys()) # to display predifined contact
+        
     def add_contact(self):
         name = self.name_input.text().strip()
         phone = self.phn_input.text().strip()
